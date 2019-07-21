@@ -1,6 +1,6 @@
 ![Alt text](logo.png?raw=true "Logo")
 
-Resortera (slingshot) blocks all Twitter accounts shown on the screen, one by one. 
+Slingshot blocks all Twitter accounts shown on the screen, one by one. 
 It won't block accounts you're actually following.
 
 How to use it:
