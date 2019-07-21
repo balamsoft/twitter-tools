@@ -1,5 +1,26 @@
 ![Alt text](logo.png?raw=true "Logo")
 
+# create-twitter-blocklist.js
+
+As it name implies, it creates a blocking list compatible with Twitter based on the list if accounts shown on screen.
+
+How to use it:
+
+- go to twitter.com
+- go to someone's account you don't like (a bot, a hate speaker, etc)
+- click his/her followers tab
+- open the browser's console (Chrome for Windows: F12, Chrome for Mac: Cmd+Alt+I)
+- paste the script in your browser's console and hit enter
+- wait until the process is done or click the gray "Copy" button next to "Show more".
+- save all that text to a simple text file (change the file extension to CSV)
+- go to Twitter.com > Configuration & Privacy > Advanced Options > Import List
+- select the file you saved before
+
+That's it!
+
+
+# slingshot.js
+
 Slingshot blocks all Twitter accounts shown on the screen, one by one. 
 It won't block accounts you're actually following.
 
