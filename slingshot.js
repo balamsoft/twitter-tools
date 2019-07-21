@@ -28,7 +28,7 @@
 
                 setTimeout(function(){
                     blockVisibleThenScroll();
-                }, 8000);
+                }, 2500);
             }
         }, 
         1200
@@ -43,7 +43,7 @@ function blockIt(btn){
     $(btn).click(); 
     setTimeout(function () { 
         $(".block-button").click(); 
-    }, 800); 
+    }, 300); 
 }
 
 blockVisibleThenScroll();
