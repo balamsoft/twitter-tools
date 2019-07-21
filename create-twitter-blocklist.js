@@ -15,7 +15,7 @@ function findBlockableThenScroll(){
     }
     
     for(var x=0; x < blockableUsers.length; x++){ 
-        allAccountsCSV = allAccountsCSV + '|' + blockableUsers[x].dataset.userId;
+        allAccountsCSV = allAccountsCSV + '\n' + blockableUsers[x].dataset.userId;
     }
     
     $("html, body").animate({ scrollTop: $(document).height() }, 1200);
