@@ -16,6 +16,8 @@ How to use it:
 - go to Twitter.com > Configuration & Privacy > Advanced Options > Import List
 - select the file you saved before
 
+Note: If Twitter says the file is too large you can create another CSV file and paste there a small amount of accounts, then load the file, then repeat with another subset.
+
 That's it!
 
 
