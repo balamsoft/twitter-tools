@@ -9,8 +9,8 @@ function findBlockableThenScroll(){
 
     var blockableUsers = findBlockableUsers();
     if(!blockableUsers || blockableUsers.length === 0){
-        console.error("-- PROCESS COMPLETE --");
         console.error(allAccountsCSV);
+        console.error("-- PROCESS COMPLETE --");
         return;
     }
     
