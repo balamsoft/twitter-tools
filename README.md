@@ -11,7 +11,7 @@ How to use it:
 - click his/her followers tab
 - open the browser's console (Chrome for Windows: F12, Chrome for Mac: Cmd+Alt+I)
 - paste the script in your browser's console and hit enter
-- wait until the process is done or click the gray "Copy" button next to "Show more".
+- wait until the process is done (or click the gray "Copy" button next to "Show more" at any time to get a partial list).
 - save all that text to a simple text file (change the file extension to CSV)
 - go to Twitter.com > Configuration & Privacy > Advanced Options > Import List
 - select the file you saved before
