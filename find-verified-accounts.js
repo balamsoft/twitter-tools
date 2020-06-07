@@ -12,12 +12,15 @@ function findVerifiedThenScroll() {
         cycles++;
     }
 
+    var lastFound = null;
     var found = findVerifiedAccounts();
+    if (found && found !== lastFound) {
+        lastFound = found.parentElement.parentElement.nextElementSibling.firstElementChild.firstElementChild.innerText;
+        var name = found.parentElement.previousElementSibling.firstElementChild.innerText;
+        console.info("Cuenta verificada: " + name + " (" + lastFound + ")");
+    }
+
     var timer = setInterval(function () {
-        if (found && lastFound !== found) {
-            lastFound = found.parentElement.previousElementSibling.innerHTML;
-            console.info("Cuenta verificada: " + lastFound);
-        }
         clearInterval(timer);
         window.scrollTo(0, document.body.scrollHeight);
 
@@ -35,5 +38,4 @@ function findVerifiedAccounts() {
 var cycles = 0;
 var maxCycles = 1000;
 var jQuery = $;
-var lastFound = null;
 findVerifiedThenScroll();
