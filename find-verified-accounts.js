@@ -12,12 +12,11 @@ function findVerifiedThenScroll() {
         cycles++;
     }
 
-    var lastFound = null;
     var found = findVerifiedAccounts();
     if (found && found !== lastFound) {
-        lastFound = found.parentElement.parentElement.nextElementSibling.firstElementChild.firstElementChild.innerText;
-        var name = found.parentElement.previousElementSibling.firstElementChild.innerText;
-        console.info("Cuenta verificada: " + name + " (" + lastFound + ")");
+        lastFound = found.parentElement.parentElement.parentElement.lastElementChild.innerText;
+        var fullName = found.parentElement.parentElement.innerText;
+        console.info("Cuenta verificada: " + fullName + " (" + lastFound + ")");
     }
 
     var timer = setInterval(function () {
@@ -38,4 +37,5 @@ function findVerifiedAccounts() {
 var cycles = 0;
 var maxCycles = 1000;
 var jQuery = $;
+var lastFound = null;
 findVerifiedThenScroll();
