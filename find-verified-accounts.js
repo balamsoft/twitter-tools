@@ -1,12 +1,12 @@
 function findVerifiedThenScroll() {
     if (console) {
-        console.info("Buscando cuentas verificadas...");
+        console.info('Buscando cuentas verificadas...');
     }
 
     if (cycles >= maxCycles) {
         if (console) {
-            console.info("-- PROCESS COMPLETE --");
-            console.info("All accounts found: " + JSON.stringify(allFound));
+            console.info('-- PROCESO COMPLETADO --');
+            console.info("Todas las cuentas encontradas: \n" + JSON.stringify(allFound));
         }
         return;
     } else {
@@ -17,8 +17,9 @@ function findVerifiedThenScroll() {
     if (found && found.parentElement.parentElement.parentElement.lastElementChild.innerText !== lastFound) {
         lastFound = found.parentElement.parentElement.parentElement.lastElementChild.innerText;
         var fullName = found.parentElement.parentElement.innerText;
-        allFound.push(fullName + ' (' + lastFound + ')');
-        console.info("Cuenta verificada: " + fullName + " (" + lastFound + ")");
+        var accountName = fullName + ' (' + lastFound + ')';
+        allFound.push(accountName);
+        console.info("Cuenta verificada: " + accountName);
     }
 
     var timer = setInterval(function () {
@@ -44,5 +45,5 @@ var maxCycles = 1000;
 var jQuery = $;
 var lastFound = null;
 var allFound = [];
-console.log("To stop the script just type ´stop()´ or reload the page.");
+console.log('Para detener el proceso ejecute la función ´stop()´ o recargue la página.');
 findVerifiedThenScroll();
